@@ -13,7 +13,7 @@ class Request
       end
 
       def reject?
-        no_commit? || repository.private? || skipped? || github_pages?
+        no_commit? || skipped? || github_pages?
       end
 
       protected
